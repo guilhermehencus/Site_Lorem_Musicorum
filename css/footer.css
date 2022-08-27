@@ -1,0 +1,36 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+footer {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 15px 0 0 0;
+    padding: 15px;
+    border: 0;
+    background-image: url(../img/footer.jpg);
+    color: #777;
+    height: auto;
+    text-align: center;
+    position: realtive;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    clear: both;
+}
+
+    footer img {
+        float: left;
+        clear: both;
+        width: 65px;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+
+    footer h1 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+}

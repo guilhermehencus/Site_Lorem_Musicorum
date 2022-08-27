@@ -1,0 +1,71 @@
+body {
+    background-image: url("../img/botao-curso.jpg");
+}
+h3 {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: Helvetica, sans-serif;
+}
+input[type="submit"] {
+    border: 2px solid #28f;
+    padding: 8px;
+    border-radius: 15px;
+    color: #000;
+    margin: 7px;
+    text-align: center;
+    transition: 1s;
+    background-color: #eee;
+	 cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        transition: 1s;
+        background-color: #28f;
+    }
+
+.editar {
+    width: 200px;
+    height: auto;
+    margin: 30px 10px 30px auto;
+    transform: translate(470px, 80%);
+    font-size: 0.8em;
+    border: 2px solid #0c2;
+    padding: 8px;
+    border-radius: 15px;
+    color: #000;
+    margin: 7px;
+    text-align: center;
+    background-color: white;
+    transition: 1s;
+
+}
+    .editar:hover {
+        transition: 1s;
+    }
+#sair {
+	text-decoration:none;
+    font-size: 1em;
+    margin: 7px;
+    border: 2px solid red;
+    padding: 8px;
+    border-radius: 15px;
+    color: #000;
+    margin: 7px;
+    text-align: center;
+    background-color: #eee;
+    transition: 1s;
+     font-family: helvetica, sans-serif;
+}
+    #sair:hover {
+        transition: 1s;
+		background-color: red;
+        color: black;
+    }
+    select {
+        padding: 3px;
+        border: solid #000 2px;
+        border-radius: 8px;
+        box-shadow: 3px 0 0 #fff;
+        background-color: #fff;
+    }

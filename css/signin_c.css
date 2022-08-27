@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+section {
+    width: 200px;
+    height: auto;
+    margin: 30px auto 30px auto;
+    text-align: center;
+    padding: 20px;
+    border: 8px double #28f;
+    background-color: #ddf;
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"],  input[type="date"]{
+     border: 2px solid #28f;
+    padding: 8px;
+    border-radius: 15px;
+    color: #000;
+    margin: 7px;
+    text-align: center;
+    background-color: #fff;
+    transition: 1s;
+}
+
+    input[type="text"]:focus, input[type="email"]:focus,input[type="password"]:focus, input[type="date"] {
+        transition: 1s;
+        border-color: #000;
+    }
+
+
+input[type="submit"] {
+    border: 2px solid #0c2;
+    padding: 8px;
+    border-radius: 15px;
+    color: #000;
+    margin: 7px;
+    text-align: center;
+    transition: 1s;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        transition: 1s;
+        background-color: #0c2;
+    }
+
+.status {
+    width: 200px;
+    height: auto;
+    font-size: 0.8em;
+    color: #fff;
+    font-weight: bolder;
+    margin: 8px auto 8px auto;
+    box-shadow: inset 0 0 15px #000;
+    border-radius: 8px;
+    position: absolute;
+    top: 3px;
+}
+  .insucesso {
+    width: 235px;
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background: #B71C1C;
+    transform: translateX(160%);
+    text-align: center;
+    animation: animacao 10s;
+    animation-fill-mode: forwards; 
+    
+    }
+  .insucesso p {
+     border-radius: 6px;
+     border: 10px solid #B71C1C;
+     margin: 3px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    animation: animacao 10s;
+    animation-fill-mode: forwards; 
+            
+    }
+ #sucesso {
+    width: 235px;
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    transform: translateX(160%);
+    text-align: center;
+     background: #00C853;
+     animation: animacao 10s;
+    animation-fill-mode: forwards; 
+    
+    }
+ #sucesso p {
+     border-radius: 6px;
+     border: 10px solid #00C853;
+     margin: 3px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    animation: animacao 10s;
+    animation-fill-mode: forwards; 
+     }
+    @keyframes animacao {
+         
+             0%   {top: 0px; border-radius: 6px;}
+            100%  {top: 100px; visibility:hidden;  border-radius: 6px;}
+    }
+
+   
+    select {
+        padding: 3px;
+        border: solid #000 2px;
+        border-radius: 8px;
+        box-shadow: 3px 0 0 #fff;
+        background-color: #fff;
+    }

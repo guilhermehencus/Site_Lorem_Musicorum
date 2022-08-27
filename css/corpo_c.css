@@ -1,0 +1,767 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #fff2c1;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+.menu {
+        width:130px;
+        height:130px;
+        border-radius:50%;
+        border:3px solid blue;
+        z-index:5;
+        background:#fff;
+        float: right;
+        margin-top: -100px;
+        list-style-type: none;
+}
+.menu li ul {
+    display: none;
+}
+.menu li:hover ul {
+   display: inline;
+   background-color: white;
+   position: absolute;
+   margin-top: 60px;
+   width: 0px;
+   margin-right: -60px;
+}
+.menu li ul li a {
+    font-size: 15px;
+    font-family: Verdana, Arial, sans-serif;
+    position: absolute;
+    margin-top: -60px;
+    transform: translateX(-60%);
+    
+}
+.menu li::after, .menu li::before {
+    content: none;
+
+}
+.menu li ul li  a {
+    margin-left: 70px;
+    display:block; 
+    width:50px;
+    color: #fc6;
+
+}
+#Logo_Click {
+    position: relative;
+    float: right;
+    top: 0;
+    width: 80px;
+    margin-top: 20px;
+    margin-right: 25px;
+} 
+#Logo_Click:hover {
+    opacity: 0.1;
+} 
+
+@media only screen and (max-width: 355px) {
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .corpo {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        background-color: #ddd;
+        border: 3px solid #ad5d00;
+    }
+
+    .lateral {
+        color: #fff;
+        float: left;
+        clear: both;
+        padding: 8px;
+        margin: 5px;
+        background-image: url(../img/menu-lateral.jpg);
+        width: auto;
+        height: auto;
+        border: 2px double #808080;
+        box-shadow: inset 0 0 30px black;
+    }
+
+        .lateral ul, .lateral li {
+            list-style: none;
+        }
+
+        .lateral > ul {
+            margin: auto;
+            padding-left: 10px;
+        }
+
+        .lateral ul ~ li {
+            margin: 10px;
+        }
+
+        .lateral a:link {
+            color: #fff;
+        }
+
+        .lateral a:visited {
+            color: #fc6;
+        }
+
+        .lateral a:active {
+            color: #f80;
+        }
+
+    .conteudo {
+        margin: 30px auto 10px auto;
+        padding-bottom: inherit;
+    }
+
+        .conteudo li {
+            clear: both;
+            display: inline-block;
+            margin: auto;
+            width: auto;
+            height: auto;
+            vertical-align: top;
+        }
+
+    figure {
+        background-color: #eee;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        border: 2px solid #bbb;
+        border-radius: 10px;
+    }
+
+        figure img {
+            box-shadow: inset 0 0 8px black;
+            margin: 2px;
+            padding: 2px;
+            width: 110px;
+            height: auto;
+        }
+
+    .botoes {
+        position: center;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 500px) {
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .corpo {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        background-color: #ddd;
+        border: 3px solid #ad5d00;
+    }
+
+    .lateral {
+        color: #fff;
+        float: left;
+        clear: both;
+        padding: 8px;
+        margin: 5px;
+        background-image: url(../img/menu-lateral.jpg);
+        width: auto;
+        height: auto;
+        border: 2px double #808080;
+        box-shadow: inset 0 0 30px black;
+    }
+
+        .lateral ul, .lateral li {
+            list-style: none;
+        }
+
+        .lateral > ul {
+            margin: auto;
+            padding-left: 10px;
+        }
+
+        .lateral ul ~ li {
+            margin: 10px;
+        }
+
+        .lateral a:link {
+            color: #fff;
+        }
+
+        .lateral a:visited {
+            color: #fc6;
+        }
+
+        .lateral a:active {
+            color: #f80;
+        }
+
+    .conteudo {
+        margin: 30px auto 10px auto;
+        padding-bottom: inherit;
+    }
+
+        .conteudo li {
+            clear: both;
+            display: inline-block;
+            margin: auto;
+            width: auto;
+            height: auto;
+            vertical-align: top;
+        }
+
+    figure {
+        background-color: #eee;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        border: 2px solid #bbb;
+        border-radius: 10px;
+    }
+
+        figure img {
+            box-shadow: inset 0 0 8px black;
+            margin: 2px;
+            padding: 2px;
+            width: 200px;
+            height: auto;
+        }
+
+    .botoes {
+        position: center;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 599px){
+    
+    .corpo {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: auto;
+        background-color: #ddd;
+        border: 3px solid #ad5d00;
+    }
+
+    .lateral {
+        color: #fff;
+        clear: both;
+        padding: 10px;
+        margin: 20px;
+        background-image: url(../img/menu-lateral.jpg);
+        width: 335px;
+        height: auto;
+        border: 2px double #808080;
+        box-shadow: inset 0 0 30px black;
+    }
+
+        .lateral ul, .lateral li {
+            list-style: none;
+        }
+
+        .lateral > ul {
+            margin: auto;
+            padding-left: 10px;
+        }
+
+        .lateral ul ~ li {
+            margin: 10px;
+        }
+
+        .lateral a:link {
+            color: #fff;
+        }
+
+        .lateral a:visited {
+            color: #fc6;
+        }
+
+        .lateral a:active {
+            color: #f80;
+        }
+
+    .conteudo {
+        margin: 30px auto 10px 20px;
+        padding-bottom: inherit;
+    }
+
+        .conteudo li {
+            clear: both;
+            display: inline-block;
+            margin: auto;
+            width: auto;
+            height: auto;
+            vertical-align: top;
+        }
+
+    figure {
+        background-color: #eee;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        border: 2px solid #bbb;
+        border-radius: 10px;
+    }
+
+        figure img {
+            box-shadow: inset 0 0 8px black;
+            margin: 2px;
+            padding: 2px;
+            width: 200px;
+            height: auto;
+        }
+
+    .botoes {
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px){
+
+    .corpo {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: auto;
+        background-color: #ddd;
+        border: 3px solid #ad5d00;
+    }
+
+    .lateral {
+        color: #fff;
+        clear: both;
+        padding: 10px;
+        margin: 20px;
+        background-image: url(../img/menu-lateral.jpg);
+        width: 335px;
+        height: auto;
+        border: 2px double #808080;
+        box-shadow: inset 0 0 30px black;
+    }
+
+        .lateral ul, .lateral li {
+            list-style: none;
+        }
+
+        .lateral > ul {
+            margin: auto;
+            padding-left: 10px;
+        }
+
+        .lateral ul ~ li {
+            margin: 10px;
+        }
+
+        .lateral a:link {
+            color: #fff;
+        }
+
+        .lateral a:visited {
+            color: #fc6;
+        }
+
+        .lateral a:active {
+            color: #f80;
+        }
+
+    .conteudo {
+        margin: 30px auto 10px 20px;
+        padding-bottom: inherit;
+    }
+
+        .conteudo li {
+            clear: both;
+            display: inline-block;
+            margin: auto;
+            width: auto;
+            height: auto;
+            vertical-align: top;
+        }
+
+    figure {
+        background-color: #eee;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        border: 2px solid #bbb;
+        border-radius: 10px;
+    }
+
+        figure img {
+            box-shadow: inset 0 0 8px black;
+            margin: 2px;
+            padding: 2px;
+            width: 200px;
+            height: auto;
+        }
+
+    .botoes {
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1030px) {
+
+    .corpo {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: auto;
+        background-color: #ddd;
+        border: 3px solid #ad5d00;
+    }
+
+    .lateral {
+        color: #fff;
+        float: left;
+        clear: both;
+        padding: 10px;
+        margin: 20px;
+        background-image: url(../img/menu-lateral.jpg);
+        width: 335px;
+        height: auto;
+        border: 2px double #808080;
+        box-shadow: inset 0 0 30px black;
+    }
+
+        .lateral ul, .lateral li {
+            list-style: none;
+        }
+
+        .lateral > ul {
+            margin: auto;
+            padding-left: 10px;
+        }
+
+        .lateral ul ~ li {
+            margin: 10px;
+        }
+
+        .lateral a:link {
+            color: #fff;
+        }
+
+        .lateral a:visited {
+            color: #fc6;
+        }
+
+        .lateral a:active {
+            color: #f80;
+        }
+
+    .conteudo {
+        margin: 30px auto 10px 20px;
+        padding-bottom: inherit;
+    }
+
+        .conteudo li {
+            clear: both;
+            display: inline-block;
+            margin: auto;
+            width: auto;
+            height: auto;
+            vertical-align: top;
+        }
+
+    figure {
+        background-color: #eee;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        border: 2px solid #bbb;
+        border-radius: 10px;
+    }
+
+        figure img {
+            box-shadow: inset 0 0 8px black;
+            margin: 2px;
+            padding: 2px;
+            width: 200px;
+            height: auto;
+        }
+
+    .botoes {
+        position: center;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1031px) and (max-width: 1727px){
+
+    .corpo {
+        margin-left: 40px;
+        margin-right: 80px;
+        width: auto;
+        background-color: #ddd;
+        border: 3px solid #ad5d00;
+    }
+
+    .lateral {
+        color: #fff;
+        float: left;
+        clear: both;
+        padding: 10px;
+        margin: 20px;
+        background-image: url(../img/menu-lateral.jpg);
+        width: 335px;
+        height: auto;
+        border: 2px double #808080;
+        box-shadow: inset 0 0 30px black;
+    }
+
+        .lateral ul, .lateral li {
+            list-style: none;
+        }
+
+        .lateral > ul {
+            margin: auto;
+            padding-left: 10px;
+        }
+
+        .lateral ul ~ li {
+            margin: 10px;
+        }
+
+        .lateral a:link {
+            color: #fff;
+        }
+
+        .lateral a:visited {
+            color: #fc6;
+        }
+
+        .lateral a:active {
+            color: #f80;
+        }
+
+    .conteudo {
+        margin: 30px auto 10px 20px;
+        padding-bottom: inherit;
+    }
+
+        .conteudo li {
+            clear: both;
+            display: inline-block;
+            margin: auto;
+            width: auto;
+            height: auto;
+            vertical-align: top;
+        }
+
+    figure {
+        background-color: #eee;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        border: 2px solid #bbb;
+        border-radius: 10px;
+    }
+
+        figure img {
+            box-shadow: inset 0 0 8px black;
+            margin: 2px;
+            padding: 2px;
+            width: 240px;
+            height: auto;
+        }
+
+    .botoes {
+        position: center;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1728px){
+
+    .corpo {
+        margin-left: 40px;
+        margin-right: 80px;
+        width: auto;
+        height: 400px;
+        background-color: #ddd;
+        border: 3px solid #ad5d00;
+    }
+
+    .lateral {
+        color: #fff;
+        float: left;
+        clear: both;
+        padding: 10px;
+        margin: 20px;
+        background-image: url(../img/menu-lateral.jpg);
+        width: 335px;
+        height: auto;
+        border: 2px double #808080;
+        box-shadow: inset 0 0 30px black;
+    }
+
+        .lateral ul, .lateral li {
+            list-style: none;
+        }
+
+        .lateral > ul {
+            margin: auto;
+            padding-left: 10px;
+        }
+
+        .lateral ul ~ li {
+            margin: 10px;
+        }
+
+        .lateral a:link {
+            color: #fff;
+        }
+
+        .lateral a:visited {
+            color: #fc6;
+        }
+
+        .lateral a:active {
+            color: #f80;
+        }
+
+    .conteudo {
+        margin: 30px auto 10px 20px;
+        padding-bottom: inherit;
+    }
+
+        .conteudo li {
+            clear: both;
+            display: inline-block;
+            margin: auto;
+            width: auto;
+            height: auto;
+            vertical-align: top;
+        }
+
+    figure {
+        background-color: #eee;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        border: 2px solid #bbb;
+        border-radius: 10px;
+    }
+
+        figure img {
+            box-shadow: inset 0 0 8px black;
+            margin: 2px;
+            padding: 2px;
+            width: 240px;
+            height: auto;
+        }
+
+    .botoes {
+        position: center;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
+/* -- SEM MEDIA QUERRY --
+
+.corpo {
+    margin-left: 20px;
+    margin-right: 80px;
+    width: auto;
+    background-color: #ddd;
+    border: 3px solid #ad5d00;
+}
+.lateral {
+    color: #fff;
+    float: left;
+    clear: both;
+    padding: 8px;
+    margin: 5px;
+    background-image: url(../img/menu-lateral.jpg);
+    width: 240px;
+    height: auto;
+    border: 2px double #808080;
+    box-shadow: inset 0 0 30px black;
+}
+    .lateral ul, .lateral li {
+        list-style: none;
+    }
+        .lateral > ul {
+            margin: auto;
+            padding-left: 10px;
+        }
+            .lateral ul ~ li {
+                margin: 10px;
+            }
+
+.lateral a:link {
+    color: #fff;
+}
+
+.lateral a:visited {
+    color: #fc6;
+}
+
+.lateral a:active {
+    color: #f80;
+}
+
+.conteudo {
+    margin: 30px auto 10px 20px;
+    padding-bottom: inherit;
+}
+    .conteudo li {
+        clear:both;
+        display: inline-block;
+        margin: auto;
+        width: auto;
+        height: auto;
+        vertical-align: top;
+    }
+
+figure {
+    background-color: #eee;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    border-radius: 10px;
+}
+    figure img {
+        box-shadow: inset 0 0 8px black;
+        margin: 2px;
+        padding: 2px;
+        width: 250px;
+        height: auto;
+    }
+
+.botoes {
+    position: center;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  -------------------- */
