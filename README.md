@@ -1,8 +1,8 @@
 # Lorem Musicorum  
  
 ### *Explicação Breve* 
-A ideia por site foi de oferecer um repositório gratuito tudo relacionado a música como cursos, rádio, compartilhamento de criações e composições. A versão dessse site 
-já vinha com uma leitura intodutória ao mundo musical. O site já contava com responsividade.
+A ideia por site foi de oferecer um repositório gratuito tudo relacionado a música como cursos, rádio, compartilhamento de criações e composições. A versão desse site 
+já vinha com uma leitura introdutória ao mundo musical. O site já contava com responsividade.
   
 ### *Visão Geral*  
  <h4>  &nbsp; Página inicial: </h4>
